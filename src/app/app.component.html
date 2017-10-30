@@ -1,4 +1,43 @@
-<div class="container">
-  <h1>{{title}}</h1>
-  <router-outlet></router-outlet>
-</div>
+<header>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+     <a href="#" class="brand-logo">{{title}}</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="marketplace">Marketplace</a></li>
+     </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+
+<footer class="page-footer blue-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Footer</h5>
+        <p class="grey-text text-lighten-4">This is the footer.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2017 Copyright
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
